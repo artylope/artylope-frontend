@@ -92,7 +92,8 @@ nav {
     fill: #484DA9; }
 
 body {
-  font-family: "Muli", sans-serif; }
+  font-family: "Muli", sans-serif;
+  line-height: normal; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
@@ -102,6 +103,13 @@ h1, h2, h3, h4, h5, h6 {
 a {
   text-decoration: none;
   color: #222; }
+
+img {
+  width: 100%;
+  height: 100%; }
+  img.shorter {
+    width: 75%;
+    height: auto; }
 
 .container {
   max-width: 1200px;
@@ -138,3 +146,49 @@ a {
       #works .container .work:hover {
         transform: translate(0px, -5px);
         box-shadow: rgba(45, 45, 45, 0.05) 0px 2px 2px, rgba(49, 49, 49, 0.05) 0px 4px 4px, rgba(42, 42, 42, 0.05) 0px 8px 8px, rgba(32, 32, 32, 0.05) 0px 16px 16px, rgba(49, 49, 49, 0.05) 0px 32px 32px; }
+
+#single-work {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  #single-work .container {
+    margin: 0 auto;
+    max-width: none;
+    text-align: center; }
+    #single-work .container .inner-container {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: left; }
+      #single-work .container .inner-container .work-meta {
+        color: #888;
+        font-size: 14px;
+        margin-bottom: 30px; }
+        #single-work .container .inner-container .work-meta h1 {
+          font-size: 48px; }
+        #single-work .container .inner-container .work-meta .work-owner {
+          margin-top: 10px;
+          margin-bottom: 10px; }
+        #single-work .container .inner-container .work-meta .work-meta-row {
+          display: flex;
+          flex-direction: row;
+          padding: 2px 0; }
+          #single-work .container .inner-container .work-meta .work-meta-row .work-meta-label {
+            font-weight: bold;
+            flex-basis: 100px; }
+      #single-work .container .inner-container .work-content {
+        margin-top: 50px;
+        margin-bottom: 50px; }
+        #single-work .container .inner-container .work-content h1, #single-work .container .inner-container .work-content h2, #single-work .container .inner-container .work-content h3, #single-work .container .inner-container .work-content h4, #single-work .container .inner-container .work-content h5, #single-work .container .inner-container .work-content h6 {
+          margin-top: 20px;
+          margin-bottom: 10px;
+          max-width: 700px; }
+        #single-work .container .inner-container .work-content h2 {
+          font-size: 40px; }
+        #single-work .container .inner-container .work-content h3 {
+          font-size: 28px; }
+        #single-work .container .inner-container .work-content h4 {
+          font-size: 20px;
+          color: #888; }
+        #single-work .container .inner-container .work-content p {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          max-width: 700px; }

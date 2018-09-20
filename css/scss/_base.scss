@@ -2,6 +2,7 @@
 
 body {
   font-family: $body-font;
+  line-height: normal;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -14,6 +15,18 @@ a{
   text-decoration: none;
   color: $body-color;
 }
+
+img{
+  width: 100%;
+  height: 100%;
+  &.shorter{
+    width: 75%;
+    height: auto;
+
+  }
+}
+
+
 .container{
   max-width: 1200px;
   margin: 0 auto;
@@ -60,5 +73,70 @@ a{
         rgba(49, 49, 49, 0.05) 0px 32px 32px;
       }
     }
+  }
+}
+
+#single-work{
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  .container{
+    margin: 0 auto;
+    max-width: none;
+    text-align: center;
+    .inner-container{
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: left;
+      .work-meta{
+        color: $light-grey;
+        font-size: 14px;
+        margin-bottom: 30px;
+
+        h1{
+          font-size: 48px;
+        }
+        .work-owner{
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+        .work-meta-row{
+          display: flex;
+          flex-direction: row;
+          padding: 2px 0;
+          .work-meta-label{
+            font-weight: bold;
+            flex-basis: 100px;
+
+          }
+        }
+      }
+      .work-content{
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        h1,h2,h3,h4,h5,h6{
+          margin-top: 20px;
+          margin-bottom: 10px;
+          max-width: 700px;
+        }
+        h2{
+          font-size: 40px;
+        }
+        h3{
+          font-size: 28px;
+        }
+        h4{
+          font-size: 20px;
+          color: $light-grey;
+        }
+        p{
+          margin-top: 10px;
+          margin-bottom: 10px;
+          max-width: 700px;
+        }
+      }
+    }
+
   }
 }
