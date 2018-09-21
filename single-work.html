@@ -13,6 +13,21 @@
 </head>
 
 <body>
+  <nav>
+    <input id="menu-toggle" type="checkbox" onclick="toggleMenu() " />
+    <label id="mobile-menu-label" for="menu-toggle">
+      <span id="menu-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
+      </span>
+    </label>
+
+    <ul id="menu">
+      <!-- <li><a href="">Home</a></li> -->
+      <li class="active"><a href="works.html">Works</a></li>
+      <li><a href="">Blog</a></li>
+      <li><a href="">About</a></li>
+    </ul>
+  </nav>
   <section id="single-work">
     <div class="container">
       <div class="inner-container">
@@ -37,6 +52,14 @@
               1234
             </div>
           </div>
+          <div class="work-meta-row">
+            <div class="work-meta-label">
+              Role
+            </div>
+            <div class="work-meta-value">
+              Lead Designer. User Research, Prototyping, Wireframing, User Testing, User Interface Design, Trial Set Up, Product Strategy, Product Management
+            </div>
+          </div>
         </div>
       </div>
       <img src="img/hero.png"/>
@@ -44,6 +67,7 @@
         <div class="work-content">
           <h2>The Project</h2>
           <img src="img/hero.png"/>
+              <p class="caption">This is a lorem ipsum test caption.</p>
           <h3>The Problem</h3>
           <p>
             In Singapore, when motorists park their vehicles in public car parks, they have to tear pre-paid paper coupons to pay for parking. This is cumbersome for the users. They need to stock up coupons and tear many pieces if they were to park for a long period of time. If they want to extend parking, they will have to run back to their vehicle to tear more coupons.
@@ -60,6 +84,7 @@
         </div>
       </div>
       <img class="shorter" src="img/hero.png"/>
+      <p class="caption">This is a lorem ipsum test caption.</p>
       <div class="inner-container">
         <div class="work-content">
           <h2>The Process</h2>
@@ -80,6 +105,23 @@
         </div>
       </div>
     </div>
+  </section>
+  <section id="works-nav">
+    <div class="container">
+      <div class="prev-work">
+        <a>← Project Name</a>
+      </div>
+      <div class="all-works">
+        <a>All Works</a>
+      </div>
+      <div class="next-work">
+          <a>Project Name →</a>
+      </div>
+    </div>
+
+  </section>
+  <section id="footer">
+    Crafted by Yi Xin. 2018
   </section>
 </body>
 </html>
