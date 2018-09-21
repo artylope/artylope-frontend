@@ -65,7 +65,7 @@ nav {
       nav ul li.active a {
         color: black; }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 992px) {
   nav {
     padding: 0em; }
     nav ul {
