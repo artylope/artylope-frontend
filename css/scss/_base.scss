@@ -78,9 +78,11 @@ img{
         padding-top: 20px;
 
         h1{
-          font-size: 18px;
+          font-size: 1rem;
         }
-
+        p{
+          font-size: 1rem;
+        }
       }
       &:hover{
         transform: translate(0px, -5px);
@@ -212,7 +214,7 @@ img{
   margin-top: 0px;
 }
 
-@media (min-width: 768px){
+@media (min-width: 992px){
   .container{
     padding-left: 0px;
     padding-right: 0px;
@@ -221,7 +223,13 @@ img{
   #works{
     .container{
       .work{
-        flex-basis: 45%;
+        flex-basis: 30%;
+        h1{
+          font-size: 1rem !important;
+        }
+        p{
+          font-size: 1rem !important;;
+        }
       }
     }
   }
@@ -243,7 +251,7 @@ img{
       }
     }
   }
-
+/*
   @media (min-width: 992px){
     #works{
       .container{
@@ -256,3 +264,4 @@ img{
 #footer{
 
 }
+ */
