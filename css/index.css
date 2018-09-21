@@ -47,7 +47,7 @@ nav {
   padding: 1em;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 20px; }
+  font-size: 2em; }
   nav ul {
     list-style-type: none;
     display: none;
@@ -67,7 +67,8 @@ nav {
 
 @media (min-width: 992px) {
   nav {
-    padding: 0em; }
+    padding: 0em;
+    font-size: 1.2em; }
     nav ul {
       display: flex;
       flex-direction: row; }
