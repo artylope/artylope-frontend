@@ -12,7 +12,7 @@
     .work{
       display: flex;
       flex-direction: column;
-      width: 80%;
+      width: 380px;
       margin: 20px;
       border-radius: 5px;
       box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
@@ -28,8 +28,7 @@
         }
       }
       .thumbnail{
-        min-height: 300px;
-        max-height: 500px;
+        height: 300px;
         border-radius: 5px 5px 0 0;
         background-size: cover;
         background-position: center center;
@@ -58,7 +57,7 @@
   }
 }
 
-  @media (min-width: 750px){
+  @media (min-width: 768px){
     #works{
       .container{
         flex-direction: row;
@@ -71,7 +70,7 @@
       }
     }
 
-  @media (min-width: 1280px){
+  @media (min-width: 1200px){
     #works{
       .container{
           max-width: 1200px;
