@@ -1,82 +1,69 @@
-
-#works{
+#works {
   margin-top: 3em;
   margin-bottom: 3em;
 
-  .container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    .work{
-      display: flex;
-      flex-direction: column;
-      width: 380px;
-      margin: 20px;
-      border-radius: 5px;
-      box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
-      transition: box-shadow .2s ease-out, transform .2s ease-out, opacity .1s ease-out, -webkit-box-shadow .2s ease-out, -webkit-transform .2s ease-out;
-      flex-grow: 0;
-      flex-shrink: 0;
+  .container-fluid {
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-      a{
-        color: $body-color;
-        text-decoration: none;
-        &:hover{
-          text-decoration: none;
-        }
-      }
-      .thumbnail{
-        height: 300px;
-        border-radius: 5px 5px 0 0;
-        background-size: cover;
-        background-position: center center;
-      }
-      .info{
-        padding: 1.5em;
-        min-height: 80px;
+  .box {
+    margin: 1em 0.5em;
+  }
 
-        h1{
-          font-size: 1.2em;
-          margin-bottom: .2em;
-        }
-        p{
-          font-size: 1em;
-        }
+  .card {
+    margin: 0 auto;
+    cursor: pointer;
+    max-width: 600px;
+    border-radius: 5px;
+    border: 1px solid #ebebeb;
+    // box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.2s ease-out, transform 0.2s ease-out, opacity 0.1s ease-out, -webkit-box-shadow 0.2s ease-out, -webkit-transform 0.2s ease-out;
+
+    .thumbnail {
+      position: relative;
+      border-radius: 5px 5px 0 0;
+      background-size: cover;
+      background-position: center center;
+
+      &:before {
+        // height to follow 75% of width
+        content: "";
+        display: block;
+        padding-top: 75%;
       }
-      &:hover{
-        transform: translate(0px, -5px);
-        box-shadow: rgba(45, 45, 45, 0.05) 0px 2px 2px,
-        rgba(49, 49, 49, 0.05) 0px 4px 4px,
-        rgba(42, 42, 42, 0.05) 0px 8px 8px,
-        rgba(32, 32, 32, 0.05) 0px 16px 16px,
-        rgba(49, 49, 49, 0.05) 0px 32px 32px;
+    }
+
+    .info {
+      padding: 1.5em;
+      min-height: 80px;
+
+      h1 {
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
       }
+
+      p {
+        font-size: 1em;
+      }
+    }
+
+    &:hover {
+      transform: translate(0px, -5px);
+      box-shadow: rgba(45, 45, 45, 0.1) 0 2px 2px, rgba(49, 49, 49, 0.1) 0 4px 4px;
+    }
+  }
+  @media only screen and (min-width: 48em) {
+    .col-md-6 {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+  }
+  @media only screen and (min-width: 75em) {
+    .col-lg-4 {
+      flex-basis: 33.33333333%;
+      max-width: 33.33333333%;
     }
   }
 }
-
-  @media (min-width: 992px){
-    #works{
-      .container{
-        flex-direction: row;
-        padding-left: 0px;
-        padding-right: 0px;
-        .work{
-          width: 40%;
-          }
-        }
-      }
-    }
-
-  @media (min-width: 1200px){
-    #works{
-      .container{
-          max-width: 1200px;
-        .work{
-          width: 30%;
-          }
-        }
-      }
-    }
