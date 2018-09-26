@@ -1,18 +1,63 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
 
   <title>Artylope</title>
   <meta name="description" content="Artylope">
   <meta name="author" content="Artylope">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css"> -->
   <link rel="stylesheet" href="css/index.css">
 
 </head>
 
 <body>
-  <!-- <script src="js/scripts.js"></script> -->
+  <nav>
+    <input id="menu-toggle" type="checkbox" onclick="toggleMenu() " />
+    <label id="mobile-menu-label" for="menu-toggle">
+      <span id="menu-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
+      </span>
+    </label>
+
+    <ul id="menu">
+      <!-- <li><a href="">Home</a></li> -->
+      <li><a href="works.html">Works</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li class="active"><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <section id="single-work">
+    <div class="container">
+      <div class="work-content">
+        <p>
+          Hi, I am Yi Xin, UI/UX designer working at GovTech, the government technology agency of Singapore.
+        </p>
+        <p>
+          Currently I am working on Vault and Jarvis. Vault is a data sharing repository within the government and Jarvis is a search tool for the police. As part of the Open Government Products team at GovTech, I also had the opportunity to transform the bus industry
+          with Beeline and digitise the citizens’ parking journey with Parking.sg.
+        </p>
+        <p>
+          Before joining the government, I worked on One Upon Light, an award-winning indie monochromatic puzzle game about light and shadows on Sony PS4, done together with the awesome people at SUTD Game Lab. I have also mentored young designers and developers
+          on design and development practices at the Game Innovation Programme. While it was fun making games, solving real world problems inspires me more. That made me go learn about user research and how it can guide us to make informed design decisions.
+        </p>
+        <p>
+          I am also learning to code because there is always this gap between idea and the final product. Getting better at development means I can design and prototype better and work with developers more seamlessly.
+        </p>
+        <p>
+          Outside of designing digital stuff, I enjoy swimming and eating mala hotpot. I also like to baby talk with my 1 year old son. I am also slightly obsessed with mindfulness. Recognising the inner critic and how the brain has 2 major minds - the impulsive,
+          mostly worried mind vs the slow, sensible regulating brain has been an enlightening journey.
+        </p>
+        <a>Download CV</a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">© 2018 Artylope. Built by Yi Xin. </div>
+  </footer>
 </body>
+
 </html>

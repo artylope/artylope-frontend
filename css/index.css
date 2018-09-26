@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=PT+Serif:400,700");
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700");
 html, body, div, span, applet, object, iframe,
@@ -115,6 +116,15 @@ nav {
   #mobile-menu-label {
     padding: 1.5em 1em; } }
 
+footer {
+  background-color: #eee; }
+  footer .container {
+    font-family: "Poppins", sans-serif;
+    padding: 2em;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px; }
+
 #works {
   margin-top: 3em;
   margin-bottom: 3em; }
@@ -165,7 +175,7 @@ nav {
   margin-bottom: 3em; }
   #single-work .container {
     margin: 0 auto;
-    max-width: none; }
+    max-width: 1200px; }
     #single-work .container .work-meta {
       margin: 0 auto;
       max-width: 700px;
@@ -201,8 +211,7 @@ nav {
         width: 100%;
         height: 100%;
         text-align: center;
-        margin: 0 auto;
-        object-fit: scale-down; }
+        margin: 0 auto; }
         #single-work .container .work-content img.inner {
           max-width: 700px;
           height: auto;
@@ -259,10 +268,26 @@ nav {
         margin-bottom: 1.2em;
         max-width: 700px;
         text-align: left; }
+      #single-work .container .work-content blockquote {
+        text-align: left;
+        max-width: 550px;
+        margin: 0 auto;
+        padding: 2em;
+        border-left: 10px solid #484DA9;
+        quotes: "“" "”" "‘" "’";
+        font-style: italic;
+        margin-top: 4em; }
+        #single-work .container .work-content blockquote:before {
+          color: #ccc;
+          content: open-quote;
+          font-size: 8em;
+          line-height: 0.1em;
+          margin-right: 0.25em;
+          vertical-align: -0.4em; }
 
 #works-nav {
   background: #484DA9;
-  padding: 50px;
+  padding: 2em;
   font-family: "Poppins", sans-serif;
   text-align: center; }
   #works-nav .container {
@@ -270,7 +295,9 @@ nav {
     flex-direction: column;
     align-items: center;
     align-self: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    max-width: 1200px;
+    text-align: center; }
     #works-nav .container > div {
       margin: 10px; }
     #works-nav .container a {
@@ -279,7 +306,97 @@ nav {
       #works-nav .container a:hover {
         text-decoration: underline; }
 
-#works-nav .container {
-  flex-direction: row; }
-  #works-nav .container > div {
-    margin: 0px; }
+@media only screen and (min-width: 48em) {
+  #works-nav .container {
+    flex-direction: row; }
+    #works-nav .container > div {
+      margin: 0px; } }
+
+#about {
+  margin-top: 3em;
+  margin-bottom: 3em; }
+  #about .container {
+    margin: 0 auto;
+    max-width: 1200px; }
+    #about .container .content {
+      padding-top: 20px;
+      padding-bottom: 50px;
+      text-align: center; }
+      #about .container .content img {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin: 0 auto;
+        object-fit: scale-down; }
+        #about .container .content img.inner {
+          max-width: 700px;
+          height: auto;
+          text-align: center;
+          margin: 0 auto;
+          margin-top: 1em;
+          object-fit: scale-down; }
+      #about .container .content h1, #about .container .content h2, #about .container .content h3, #about .container .content h4, #about .container .content h5, #about .container .content h6 {
+        max-width: 700px;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: left; }
+      #about .container .content h1 {
+        font-size: 2.4em;
+        margin-top: 1.6em;
+        margin-bottom: 1em; }
+      #about .container .content h2 {
+        font-size: 2em;
+        margin-top: 1.6em;
+        margin-bottom: .6em;
+        color: #222; }
+      #about .container .content h3 {
+        font-size: 1.4em;
+        margin-top: 1.2em;
+        margin-bottom: .6em;
+        color: #888; }
+      #about .container .content h4 {
+        font-weight: 400;
+        font-size: 1.2em;
+        color: #888;
+        margin-top: 1.6em;
+        margin-bottom: .6em; }
+      #about .container .content h5 {
+        font-weight: 400;
+        font-size: 1.5em;
+        color: #888;
+        margin-top: 1.6em;
+        margin-bottom: .6em; }
+      #about .container .content h6 {
+        font-weight: 400;
+        text-align: center;
+        color: #888;
+        font-size: .9em;
+        margin-top: .3em;
+        margin-bottom: 2em; }
+      #about .container .content p {
+        max-width: 700px;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 1.2em;
+        line-height: 1.6em;
+        margin-bottom: 1.2em;
+        max-width: 700px;
+        text-align: left; }
+      #about .container .content blockquote {
+        text-align: left;
+        max-width: 550px;
+        margin: 0 auto;
+        padding: 2em;
+        border-left: 10px solid #484DA9;
+        quotes: "“" "”" "‘" "’";
+        font-style: italic;
+        margin-top: 4em; }
+        #about .container .content blockquote:before {
+          color: #ccc;
+          content: open-quote;
+          font-size: 8em;
+          line-height: 0.1em;
+          margin-right: 0.25em;
+          vertical-align: -0.4em; }
