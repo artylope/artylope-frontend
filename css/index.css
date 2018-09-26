@@ -46,7 +46,8 @@ table {
 body {
   font-family: "PT Serif", serif;
   font-size: 16px;
-  line-height: 24px; }
+  line-height: 24px;
+  color: #333; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
@@ -61,10 +62,34 @@ a {
 
 img {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  text-align: center;
+  margin: 0 auto; }
 
 .container {
   margin: 0 auto; }
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6em; }
+
+h1 {
+  font-size: 2.4em; }
+
+h2 {
+  font-size: 2em; }
+
+h3 {
+  font-size: 1.4em; }
+
+h4 {
+  font-size: 1.2em; }
+
+h5 {
+  font-size: 1em; }
+
+h6 {
+  font-size: .9em; }
 
 nav {
   border-bottom: 1px solid #EBEBEB;
@@ -116,14 +141,88 @@ nav {
   #mobile-menu-label {
     padding: 1.5em 1em; } }
 
+.content {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  text-align: center; }
+  .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left; }
+  .content h1 {
+    font-size: 2.4em;
+    margin-top: 1.6em;
+    margin-bottom: 1em;
+    line-height: 1.3em; }
+  .content h2 {
+    margin-top: 1.6em;
+    margin-bottom: .6em;
+    color: #333; }
+  .content h3 {
+    margin-top: 1.2em;
+    margin-bottom: .6em;
+    color: #888; }
+  .content h4 {
+    font-weight: 400;
+    color: #888;
+    margin-top: 1.6em;
+    margin-bottom: .6em; }
+  .content h5 {
+    font-weight: 400;
+    color: #888;
+    margin-top: 1.6em;
+    margin-bottom: .6em; }
+  .content h6 {
+    font-weight: 400;
+    text-align: center;
+    color: #888;
+    font-size: .9em;
+    margin-top: .3em;
+    margin-bottom: 3em; }
+  .content p {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 1.2em;
+    max-width: 700px;
+    text-align: left; }
+  .content blockquote {
+    text-align: left;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 2em;
+    border-left: 10px solid #484DA9;
+    quotes: "“" "”" "‘" "’";
+    font-style: italic;
+    margin-top: 4em; }
+    .content blockquote:before {
+      color: #ccc;
+      content: open-quote;
+      font-size: 8em;
+      line-height: 0.1em;
+      margin-right: 0.25em;
+      vertical-align: -0.4em; }
+  .content img {
+    margin-top: 2em; }
+    .content img.inner {
+      max-width: 700px;
+      height: auto;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 2em;
+      object-fit: scale-down; }
+
 footer {
-  background-color: #eee; }
+  background-color: #484DA9; }
   footer .container {
     font-family: "Poppins", sans-serif;
+    color: white;
     padding: 2em;
-    max-width: 1200px;
-    padding-left: 20px;
-    padding-right: 20px; }
+    text-align: center;
+    max-width: 1200px; }
 
 #works {
   margin-top: 3em;
@@ -141,6 +240,8 @@ footer {
     border-radius: 5px;
     border: 1px solid #ebebeb;
     transition: box-shadow 0.2s ease-out, transform 0.2s ease-out, opacity 0.1s ease-out, -webkit-box-shadow 0.2s ease-out, -webkit-transform 0.2s ease-out; }
+    #works .card a {
+      color: #333; }
     #works .card .thumbnail {
       position: relative;
       border-radius: 5px 5px 0 0;
@@ -203,93 +304,14 @@ footer {
           flex-basis: 6em; }
         #single-work .container .work-meta .work-meta-row .work-meta-value {
           flex-grow: 1; }
-    #single-work .container .work-content {
-      padding-top: 20px;
-      padding-bottom: 50px;
-      text-align: center; }
-      #single-work .container .work-content img {
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        margin: 0 auto; }
-        #single-work .container .work-content img.inner {
-          max-width: 700px;
-          height: auto;
-          text-align: center;
-          margin: 0 auto;
-          margin-top: 1em;
-          object-fit: scale-down; }
-      #single-work .container .work-content h1, #single-work .container .work-content h2, #single-work .container .work-content h3, #single-work .container .work-content h4, #single-work .container .work-content h5, #single-work .container .work-content h6 {
-        max-width: 700px;
-        margin: 0 auto;
-        padding-left: 20px;
-        padding-right: 20px;
-        text-align: left; }
-      #single-work .container .work-content h1 {
-        font-size: 2.4em;
-        margin-top: 1.6em;
-        margin-bottom: 1em; }
-      #single-work .container .work-content h2 {
-        font-size: 2em;
-        margin-top: 1.6em;
-        margin-bottom: .6em;
-        color: #222; }
-      #single-work .container .work-content h3 {
-        font-size: 1.4em;
-        margin-top: 1.2em;
-        margin-bottom: .6em;
-        color: #888; }
-      #single-work .container .work-content h4 {
-        font-weight: 400;
-        font-size: 1.2em;
-        color: #888;
-        margin-top: 1.6em;
-        margin-bottom: .6em; }
-      #single-work .container .work-content h5 {
-        font-weight: 400;
-        font-size: 1.5em;
-        color: #888;
-        margin-top: 1.6em;
-        margin-bottom: .6em; }
-      #single-work .container .work-content h6 {
-        font-weight: 400;
-        text-align: center;
-        color: #888;
-        font-size: .9em;
-        margin-top: .3em;
-        margin-bottom: 2em; }
-      #single-work .container .work-content p {
-        max-width: 700px;
-        margin: 0 auto;
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 1.2em;
-        line-height: 1.6em;
-        margin-bottom: 1.2em;
-        max-width: 700px;
-        text-align: left; }
-      #single-work .container .work-content blockquote {
-        text-align: left;
-        max-width: 550px;
-        margin: 0 auto;
-        padding: 2em;
-        border-left: 10px solid #484DA9;
-        quotes: "“" "”" "‘" "’";
-        font-style: italic;
-        margin-top: 4em; }
-        #single-work .container .work-content blockquote:before {
-          color: #ccc;
-          content: open-quote;
-          font-size: 8em;
-          line-height: 0.1em;
-          margin-right: 0.25em;
-          vertical-align: -0.4em; }
 
 #works-nav {
-  background: #484DA9;
+  background: #EBEBEB;
   padding: 2em;
   font-family: "Poppins", sans-serif;
-  text-align: center; }
+  text-align: center;
+  color: #333;
+  font-weight: 600; }
   #works-nav .container {
     display: flex;
     flex-direction: column;
@@ -301,7 +323,7 @@ footer {
     #works-nav .container > div {
       margin: 10px; }
     #works-nav .container a {
-      color: white;
+      color: #333;
       text-decoration: none; }
       #works-nav .container a:hover {
         text-decoration: underline; }
@@ -318,85 +340,3 @@ footer {
   #about .container {
     margin: 0 auto;
     max-width: 1200px; }
-    #about .container .content {
-      padding-top: 20px;
-      padding-bottom: 50px;
-      text-align: center; }
-      #about .container .content img {
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        margin: 0 auto;
-        object-fit: scale-down; }
-        #about .container .content img.inner {
-          max-width: 700px;
-          height: auto;
-          text-align: center;
-          margin: 0 auto;
-          margin-top: 1em;
-          object-fit: scale-down; }
-      #about .container .content h1, #about .container .content h2, #about .container .content h3, #about .container .content h4, #about .container .content h5, #about .container .content h6 {
-        max-width: 700px;
-        margin: 0 auto;
-        padding-left: 20px;
-        padding-right: 20px;
-        text-align: left; }
-      #about .container .content h1 {
-        font-size: 2.4em;
-        margin-top: 1.6em;
-        margin-bottom: 1em; }
-      #about .container .content h2 {
-        font-size: 2em;
-        margin-top: 1.6em;
-        margin-bottom: .6em;
-        color: #222; }
-      #about .container .content h3 {
-        font-size: 1.4em;
-        margin-top: 1.2em;
-        margin-bottom: .6em;
-        color: #888; }
-      #about .container .content h4 {
-        font-weight: 400;
-        font-size: 1.2em;
-        color: #888;
-        margin-top: 1.6em;
-        margin-bottom: .6em; }
-      #about .container .content h5 {
-        font-weight: 400;
-        font-size: 1.5em;
-        color: #888;
-        margin-top: 1.6em;
-        margin-bottom: .6em; }
-      #about .container .content h6 {
-        font-weight: 400;
-        text-align: center;
-        color: #888;
-        font-size: .9em;
-        margin-top: .3em;
-        margin-bottom: 2em; }
-      #about .container .content p {
-        max-width: 700px;
-        margin: 0 auto;
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 1.2em;
-        line-height: 1.6em;
-        margin-bottom: 1.2em;
-        max-width: 700px;
-        text-align: left; }
-      #about .container .content blockquote {
-        text-align: left;
-        max-width: 550px;
-        margin: 0 auto;
-        padding: 2em;
-        border-left: 10px solid #484DA9;
-        quotes: "“" "”" "‘" "’";
-        font-style: italic;
-        margin-top: 4em; }
-        #about .container .content blockquote:before {
-          color: #ccc;
-          content: open-quote;
-          font-size: 8em;
-          line-height: 0.1em;
-          margin-right: 0.25em;
-          vertical-align: -0.4em; }
