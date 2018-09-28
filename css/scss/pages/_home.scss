@@ -1,0 +1,11 @@
+#home{
+  display: block;
+  background-image: url('../img/hero.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 1200px;
+  .container{
+    margin: 0 auto;
+    max-width: none;
+  }
+}
