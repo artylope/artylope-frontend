@@ -14,21 +14,25 @@
 </head>
 
 <body>
-  <nav>
+  <section id="nav">
+    <nav>
+    <div class="brand">
+      <img src="https://via.placeholder.com/200x80" />
+    </div>
     <input id="menu-toggle" type="checkbox" onclick="toggleMenu() " />
     <label id="mobile-menu-label" for="menu-toggle">
-      <span id="menu-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
-      </span>
-    </label>
-
+    <span id="menu-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
+    </span>
+  </label>
     <ul id="menu">
       <!-- <li><a href="">Home</a></li> -->
       <li><a href="works.html">Works</a></li>
-      <!-- <li><a href="blog.html">Blog</a></li> -->
-      <li class="active"><a href="about.html">About</a></li>
+      <li class="active"><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
     </ul>
-  </nav>
+    </nav>
+  </section>
 
   <section id="blog">
       <div id="sidebar">
