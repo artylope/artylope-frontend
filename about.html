@@ -16,24 +16,24 @@
 
 <body>
   <section id="nav">
-    <nav>
-    <div class="brand">
-      <img src="https://via.placeholder.com/200x80" />
+  <div id="main-nav">
+    <div class="wrapper">
+      <a href="index.html"><img src="https://via.placeholder.com/120x60" alt="Artylope" id="logo"></a>
+      <nav id="main-menu">
+        <ul>
+          <li><a href="works.html">Works</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="active"><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div id="menu-icon" class="">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
-    <input id="menu-toggle" type="checkbox" onclick="toggleMenu() " />
-    <label id="mobile-menu-label" for="menu-toggle">
-    <span id="menu-icon">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
-    </span>
-  </label>
-    <ul id="menu">
-      <!-- <li><a href="">Home</a></li> -->
-      <li><a href="works.html">Works</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li class="active"><a href="about.html">About</a></li>
-    </ul>
-    </nav>
-  </section>
+  </div>
+</section>
   <section id="about">
     <div class="container">
       <div class="content">
@@ -46,7 +46,7 @@
 
         <p>
            As part of the <a href="https://open.gov.sg/">Open Government Products</a> team at GovTech, I had the opportunity to transform the bus industry
-          with <a href="https://www.beeline.sg/">Beeline</a> and digitise the citizens’ parking journey with <a href="https://www.parking.sg/">Parking.sg</a>. I have experienced the entire product cycle for these projects from discovery, user research, prototyping, information architecture, user interface design to charting product direction, running of trials, to launch and production.
+          with <a href="https://www.beeline.sg/">Beeline</a> and digitise the citizens’ parking journey with <a href="https://www.parking.sg/">Parking.sg</a>. I have the priviledge of experiencing the entire product cycle and leading design for these projects from discovery, user research, prototyping, information architecture, user interface design to charting product direction, running of trials, to launch and production.
         </p>
         <img src="img/about_me_running_workshop.png" class="inner">
         <h6>Running a team workshop to discuss the future of Beeline, a mobility platform.</h6>
@@ -70,6 +70,7 @@
   <footer>
     <div class="container">© 2018 Artylope. Built by Yi Xin. </div>
   </footer>
+  <script type="text/javascript" src="js/nav.js"></script>
 </body>
 
 </html>

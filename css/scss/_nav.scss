@@ -1,110 +1,168 @@
 @import 'variables';
-#nav{
-  margin: 0 auto;
-  border-bottom: 1px solid #EBEBEB;
-  width: 100%;
-
-  nav {
-    max-width: 1280px;
-    margin: 0 auto;
-    font-family: $header-font;
-    font-weight: 600;
-    font-size: 2em;
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    align-content: center;
-    align-items: center;
-    justify-content: space-between;
-
-    .brand{
-      display: flex;
-      align-items: flex-start;
-      align-self: flex-start;
-      margin: 0 .5em;
-      img{
-        width: auto;
+#nav {
+  font-family: $header-font;
+  #main-nav {
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    .wrapper {
+      width: 100%;
+      max-width: 1280px;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      padding: 0 40px;
+      > a {
+        display: block;
+        float: left;
       }
-    }
-    ul {
-      list-style-type: none;
-      display: none;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: center;
-
-      li {
-        text-align: center;
-        padding: .5em;
-        line-height: 1em;
-        a {
-          text-decoration: none;
-          color: $link-color;
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-        &.active{
-          a{
-            color: $link-active;
+      a {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 18px;
+        img {
+          max-width: 100%;
+          height: auto;
+          #logo {
+            float: none;
+            margin: 0 auto;
+            width: 120px;
           }
         }
       }
-    }
-  }
-
-  //hide checkbox input element
-  #menu-toggle {
-    opacity: 0;
-  }
-
-  #menu-icon {
-    margin: 0 .5em;
-    font-size: 1em;
-    line-height: 1em;
-    svg {
-      path {
-        fill: $link-color;
+      #main-menu {
+        display: none;
+        padding: 20px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        float: none;
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        animation: promo-fade-in 0.8s ease;
+        -webkit-animation: promo-fade-in 0.8s ease;
+        top: 68px;
+        box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+        -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+      -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        &.toggled {
+          display: block;
+        }
+        ul {
+          list-style: none;
+          float: none;
+          li {
+            position: relative;
+            width: 100%;
+            padding: 10px;
+            display: block;
+            a {
+              color: $brand-primary;
+              &:hover{
+                text-decoration: underline;
+              }
+            }
+            &.active{
+              a{
+                color: darken($brand-primary, 50%);
+              }
+            }
+          }
+        }
+      }
+      #menu-icon {
+        display: block;
+        margin-top: 10px;
+        border-radius: 3px;
+        box-sizing: border-box;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        float: right;
+        margin-top: 22px;
+        span {
+          display: block;
+          background: $brand-primary;
+          width: 24px;
+          height: 3px;
+          margin: 4px;
+          border-radius: 3px;
+          -webkit-transform-origin: center;
+          transform-origin: center;
+          -webkit-transition: 0.3s ease;
+          transition: 0.3s ease;
+        }
+        &.toggled {
+          span {
+            &:first-child {
+              -webkit-transform: translateY(6px) rotate(45deg);
+              transform: translateY(6px) rotate(45deg);
+            }
+            &:nth-child(2) {
+              opacity: 0;
+            }
+            &:last-child {
+              -webkit-transform: translateY(-8px) rotate(-45deg);
+              transform: translateY(-8px) rotate(-45deg);
+            }
+          }
+        }
       }
     }
-  }
-
-  // Show menu when #menu-toggle checkbox is checked, use ~
-  #menu-toggle:checked ~ #menu {
-    display: flex;
   }
 
   @media only screen and (min-width: 48em) {
-    nav {
-      font-size: 1.2em;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      .brand{
-        display: flex;
-        align-items: center;
-        align-self: center;
-        margin: 0 1em;
-      }
-      ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        li {
-          padding: 1.5em;
+    #main-nav {
+      .wrapper {
+        a {
+        }
+        #main-menu {
+          display: block;
+          padding-top: 6px;
+          float: right;
+          top: 20px;
+          background: none;
+          box-shadow: none;
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          ul {
+            display: block;
+            float: right;
+            li {
+              padding: 0 20px;
+              position: relative;
+              display: inline;
+            }
+          }
+        }
+        #menu-icon {
+          display: none;
         }
       }
     }
-
-    //checkbox toggle will hide when breakpoint is beyond mobile
-    #menu-toggle,
-    #mobile-menu-label {
-      display: none;
-    }
-
-    #mobile-menu-label {
-      padding: 1.5em 1em;
-    }
   }
+}
 
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
 }
