@@ -22,6 +22,9 @@
     transition: box-shadow 0.2s ease-out, transform 0.2s ease-out, opacity 0.1s ease-out, -webkit-box-shadow 0.2s ease-out, -webkit-transform 0.2s ease-out;
     a{
       color: $body-color;
+      &:hover{
+        text-decoration: none;
+      }
       }
       .thumbnail {
         position: relative;

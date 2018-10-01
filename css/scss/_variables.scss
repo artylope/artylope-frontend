@@ -1,4 +1,5 @@
 $brand-primary: #484DA9;
+$brand-primary-hover: darken($brand-primary,20%);
 $nav-background: #FFFFFF;
 $link-color: $brand-primary;
 $link-hover: lighten($link-color,50%);

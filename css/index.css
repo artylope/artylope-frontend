@@ -60,7 +60,8 @@ a {
   text-decoration: none;
   color: #484DA9; }
   a:hover {
-    text-decoration: none; }
+    color: #2a2c61;
+    text-decoration: underline; }
 
 img {
   width: 100%;
@@ -103,6 +104,22 @@ ol {
   list-style-type: decimal;
   list-style-position: outside; }
 
+button {
+  background-color: #484DA9;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: white;
+  border-radius: 50px;
+  font-size: 1.2em;
+  cursor: pointer; }
+  button:hover {
+    background-color: #2a2c61; }
+
 #nav {
   font-family: "Poppins", sans-serif; }
   #nav #main-nav {
@@ -131,15 +148,11 @@ ol {
         text-decoration: none;
         font-weight: 500;
         font-size: 18px; }
-        #nav #main-nav .wrapper a img {
-          max-width: 100%;
-          height: auto; }
-          #nav #main-nav .wrapper a img #logo {
-            float: none;
-            margin: 0 auto;
-            width: 120px;
-            height: 50px;
-            margin-left: 10px; }
+        #nav #main-nav .wrapper a #logo {
+          position: relative;
+          height: auto;
+          width: auto;
+          left: 20px; }
       #nav #main-nav .wrapper #main-menu {
         display: none;
         padding: 20px;
@@ -172,7 +185,7 @@ ol {
             #nav #main-nav .wrapper #main-menu ul li a {
               color: #484DA9; }
               #nav #main-nav .wrapper #main-menu ul li a:hover {
-                text-decoration: underline; }
+                color: #2a2c61; }
             #nav #main-nav .wrapper #main-menu ul li.active a {
               color: black; }
       #nav #main-nav .wrapper #menu-icon {
@@ -186,7 +199,7 @@ ol {
         user-select: none;
         float: right;
         margin-top: 15px;
-        margin-right: 10px; }
+        margin-right: 20px; }
         #nav #main-nav .wrapper #menu-icon span {
           display: block;
           background: #484DA9;
@@ -348,6 +361,8 @@ body {
     transition: box-shadow 0.2s ease-out, transform 0.2s ease-out, opacity 0.1s ease-out, -webkit-box-shadow 0.2s ease-out, -webkit-transform 0.2s ease-out; }
     #works .card a {
       color: #333; }
+      #works .card a:hover {
+        text-decoration: none; }
     #works .card .thumbnail {
       position: relative;
       border-radius: 5px 5px 0 0;
@@ -388,7 +403,7 @@ body {
       padding-left: 20px;
       padding-right: 20px;
       font-family: "Poppins", sans-serif;
-      font-size: .9em;
+      font-size: 1em;
       margin-bottom: 30px; }
       #single-work .container .work-meta h1 {
         font-size: 3em; }
